@@ -80,7 +80,7 @@ begin
 		to_slow <= '0';
 	end if;
 	
-	if (post_cnt <= 1 or post_cnt = post_rgh - 1) then
+	if (post_cnt <= 1 or post_cnt = post_rgh - 1) then -- clkref fix for XSB boards
 		to_do <= '1';
 	else
 		to_do <= '0';
